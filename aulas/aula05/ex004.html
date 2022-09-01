@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-->   nn1
+            1545.5
+            > nn1.toFixed(2)
+            '1545.50'
+            > nn1.toFixed(2).replace(",")
+            '1545.50'
+            > nn1.toFixed(2).replace('.',',')
+            '1545,50'
+            > nn1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+            'R$ 1.545,50'
+    -->
+
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`Olá <strong>${nome}</strong>! Seu nome temm ${nome.length} letras <br/>`)
+        document.write(`Seu nome em maiuculas é ${nome.toUpperCase()}<br/>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}`)
+    </script>
+</body>
+</html>
